@@ -17,8 +17,7 @@
   </body>
   <script>
     let URL = window.location.href;
-    console.log(URL);
     URL = URL.slice(0, -11); // removes 'index.html' from URL
-    document.getElementById('about').href = URL + '/src/about.html';
+    document.getElementById('about').href = URL + 'lhost:8082/src/about.html';
   </script>
 </html>
