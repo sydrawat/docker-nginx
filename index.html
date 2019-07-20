@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
     <h1>This is the landing page!</h1>
@@ -17,7 +17,8 @@
   </body>
   <script>
     let URL = window.location.href;
+    console.log(URL);
     URL = URL.slice(0, -11); // removes 'index.html' from URL
-    document.getElementById('about').href = URL + '/about.html';
+    document.getElementById('about').href = URL + '/src/about.html';
   </script>
 </html>

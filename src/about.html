@@ -15,7 +15,8 @@
   </body>
   <script>
     let URL = window.location.href;
-    URL = URL.slice(0, -11); // removes 'about.html' from thr URL
+    console.log(URL);
+    URL = URL.slice(0, -15); // removes '/src/about.html' from thr URL
     document.getElementById('back').href = URL + '/index.html';
   </script>
 </html>
